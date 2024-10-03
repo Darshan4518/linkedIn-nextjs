@@ -19,9 +19,6 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <head>
-          <link rel="icon" href="/linkedin.png" />
-        </head>
         <body className={inter.className}>
           <main>
             <Navbar />
