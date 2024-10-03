@@ -4,7 +4,7 @@
   A feature-rich LinkedIn clone built with <strong>Next.js</strong> that allows users to interact with posts, including posting, deleting, liking, and commenting. This project also integrates user authentication, image handling, and supports both dark mode and light mode.
 </p>
 
-<h2> Live Link <a href="https://darshan-linkedin-clone.vercel.app/" target="_blank" ></a> </h2>
+<h2> Live Link <a href="https://darshan-linkedin-clone.vercel.app/" target="_blank" >https://darshan-linkedin-clone.vercel.app </a> </h2>
 
 <h2>Features</h2>
 <ul>
@@ -71,7 +71,14 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 </ol>
 
 <h2>Screenshots</h2>
-<p>Add screenshots here showcasing the app's functionality.</p>
+
+![Screenshot 2024-10-03 082355](https://github.com/user-attachments/assets/b6005500-d151-4698-9f25-0297fa45a2eb)
+
+![Screenshot 2024-10-03 082119](https://github.com/user-attachments/assets/a4e00624-0a9b-4a13-b399-db10e0a8e401)
+
+![Screenshot 2024-10-03 082606](https://github.com/user-attachments/assets/cea67b06-4c06-403f-9511-980274c1702f)
+
+![Screenshot 2024-10-03 082632](https://github.com/user-attachments/assets/b1d9227b-71de-44ab-940e-0d4a7db7e6f5)
 
 <h2>License</h2>
 <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
