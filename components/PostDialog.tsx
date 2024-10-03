@@ -13,6 +13,7 @@ import { readFileAsDataUrl } from "@/lib/utils";
 import { ImageIcon, Loader2 } from "lucide-react";
 import Image from "next/image";
 import { createPostActions } from "@/lib/serverActions";
+import { useUser } from "@clerk/nextjs";
 
 export function PostDialog({
   open,
@@ -23,6 +24,7 @@ export function PostDialog({
   setOpen: any;
   img: string;
 }) {
+  const { user } = useUser();
   const inputRef = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<string>("");
   const [inputText, setInputText] = useState<string>("");
@@ -77,7 +79,9 @@ export function PostDialog({
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div>
-              <p className="dark:text-white">Darshan Shetty</p>
+              <p className="dark:text-white">
+                {user?.firstName ? user?.firstName : ""}
+              </p>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 post to anyone
               </p>

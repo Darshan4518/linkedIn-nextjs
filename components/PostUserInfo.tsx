@@ -8,7 +8,9 @@ import { deletePost } from "@/lib/serverActions";
 
 const PostUserInfo = ({ post }: { post: any }) => {
   const { user } = useUser();
-  const fullName = `${post?.user?.firstName} ${post?.user?.lastName}`;
+  const fullName = `${post?.user?.firstName} ${
+    post?.user?.lastName ? post?.user?.lastName : ""
+  } `;
   const isCurrentUser = post?.user?.userID === user?.id;
   return (
     <div className="flex justify-between items-start">
@@ -29,9 +31,12 @@ const PostUserInfo = ({ post }: { post: any }) => {
               </Badge>
             )}
           </h3>
-          <p className="text-xs font-bold text-gray-500 dark:text-gray-400">
-            @{post?.user?.username}
-          </p>
+          {post?.user?.username && (
+            <p className="text-xs font-bold text-gray-500 dark:text-gray-400">
+              @{post?.user?.username}
+            </p>
+          )}
+
           <p className="sm:text-xs text-[10px] font-bold text-gray-500 dark:text-gray-400">
             <ReactTimeago date={new Date(post?.createdAt)} />
           </p>
