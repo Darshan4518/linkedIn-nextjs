@@ -8,7 +8,6 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { IconType } from "react-icons";
 import { SignedIn, UserButton, SignedOut, SignInButton } from "@clerk/nextjs";
 import DarkModeToggle from "./darskModeToggle";
-import { Button } from "./ui/button";
 
 type ICONS = {
   name: string;
@@ -81,9 +80,7 @@ const Navbar = () => {
           </SignedIn>
 
           <SignedOut>
-            <Button variant={"destructive"} className=" p-1 text-sm">
-              <SignInButton />
-            </Button>
+            <SignInButton />
           </SignedOut>
 
           <DarkModeToggle />
